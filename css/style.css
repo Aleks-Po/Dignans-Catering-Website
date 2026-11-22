@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "Fraunces";
+	src: url(../assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+	font-family: "DMSans";
+	src: url(../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+
+@property --primaryColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #1F3D2B;
+}
+
+@property --secondaryColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #FBF6EE;
+}
+
+@property --additionalColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #FFFFFF;
+}
+
+@property --accentColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #D9643A;
+}
+
+@property --secondaryAccentColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: #E8B04B;
+}
+
+@property --generalFontColour {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: rgba(26, 26, 23, 0.65);
+}
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--secondaryColour);
+	margin: 0;
+}
+
+.container_wrap {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 0 32px;
+}
+
+img {
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.top_bar {
+	height: 40px;
+	background: var(--primaryColour);
+	font-family: "DMSans";
+	color: var(--secondaryColour);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.top_bar .container {
+	justify-content: space-between;
+}
+
+.top_bar .container,
+.top_bar .delivery_details {
+	display: flex;
+	align-items: center;
+}
+
+.top_bar .delivery_title,
+.top_bar .delivery_details .details {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.top_bar .delivery_title img {
+	height: 14px;
+}
+
+.top_bar .delivery_title span {
+	font-size: 14px;
+}
+
+.top_bar .delivery_details {
+	gap: 20px;
+}
+
+.top_bar .delivery_details .details a {
+	color: var(--secondaryColour);
+	font-size: 14px;
+}
