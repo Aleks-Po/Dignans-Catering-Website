@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: "Fraunces-Italic";
+	src: url(../assets/fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
 	font-family: "DMSans";
 	src: url(../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
 }
@@ -75,6 +80,42 @@ a {
 
 
 
+.website_navLinks_container a {
+	color: color-mix(in srgb, var(--primaryColour) 70%, transparent);
+	font-family: "DMSans";
+	font-weight: 500;
+	line-height: 1.5;
+	padding: 3px;
+}
+.website_navLinks_container a::after {
+	content: "";
+	background: var(--accentColour);
+	width: 0;
+	height: 2px;
+	display: block;
+	transition: width 0.3s ease-in-out;
+	border-radius: 4px;
+	position: relative;
+	top: 5px;
+}
+.website_navLinks_container a:hover::after,
+.website_navLinks_container a:focus::after {
+	width: 100%;
+	transition: width 0.3s ease-in-out;
+}
+.website_navLinks_container .current_page{
+	color: var(--primaryColour);
+}
+.website_navLinks_container .current_page::after {
+	content: "";
+	background: var(--accentColour);
+	width: 100%;
+}
+
+
+
+
+
 
 
 
@@ -123,4 +164,94 @@ a {
 .top_bar .delivery_details .details a {
 	color: var(--secondaryColour);
 	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+	border-bottom: 1px solid color-mix(in srgb, var(--primaryColour) 10%, transparent);
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.navbar_wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.website_logo_container {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+.website_logo_container .website_logo {
+	background: var(--accentColour);
+	height: 44px;
+	width: 44px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 0 0 4px color-mix(in srgb, var(--accentColour) 15%, transparent);
+	font-family: "Fraunces-Italic";
+	color: var(--secondaryColour);
+	font-size: 24px;
+}
+.website_logo_container .website_name h2 {
+	color: var(--primaryColour);
+	text-transform: capitalize;
+	font-family: "Fraunces";
+	margin: 0 0 3px 0;
+}
+.website_logo_container .website_name p {
+	font-family: "DMSans";
+	text-transform: uppercase;
+	color: color-mix(in srgb, var(--primaryColour) 60%, transparent);
+	margin: 0;
+	font-size: 10px;
+	letter-spacing: 2.2px;
+	line-height: 1.5;
+	font-weight: 600;
+}
+.navbar_wrap .website_navLinks_container ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	gap: 20px;
+
+}
+.navbar_wrap .website_navLinks_container ul li {
+	list-style: none;
+	display: flex;
+}
+.website_navAdditionalLinks_container{
+	display: flex;
+	gap: 16px;
+}
+.website_navAdditionalLinks_container .register {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.website_navAdditionalLinks_container .register span {
+	color: var(--primaryColour);
+	font-family: "DMSans";
+	font-weight: 600;
+}
+.website_navAdditionalLinks_container .order_by_email {
+	background: var(--accentColour);
+	color: var(--additionalColour);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 12px 20px;
+	border-radius: 90px;
+	box-shadow: 0 10px 15px 0 color-mix(in srgb, var(--accentColour) 25%, transparent);
 }
