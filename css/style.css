@@ -257,3 +257,25 @@ header {
 	border-radius: 90px;
 	box-shadow: 0 10px 15px 0 color-mix(in srgb, var(--accentColour) 25%, transparent);
 }
+
+
+
+
+
+
+
+
+
+
+.hero_section-home {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0;
+}
+.hero_section-home .hero_details {
+	padding: 6px 16px 6px 6px;
+	background: var(--additionalColour);
+	border-radius: 99px;
+	border: 1px solid color-mix(in srgb, var(--primaryColour) 10%, transparent);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
