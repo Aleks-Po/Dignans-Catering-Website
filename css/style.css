@@ -13,7 +13,6 @@
 	src: url(../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
 }
 
-
 @property --primaryColour {
 	syntax: "<color>";
 	inherits: true;
@@ -52,6 +51,8 @@
 
 
 
+
+
 html {
 	scroll-behavior: smooth;
 }
@@ -77,8 +78,6 @@ img {
 a {
 	text-decoration: none;
 }
-
-
 
 .website_navLinks_container a {
 	color: color-mix(in srgb, var(--primaryColour) 70%, transparent);
@@ -112,6 +111,12 @@ a {
 	width: 100%;
 }
 
+.website_navAdditionalLinks_container .register span,
+.website_navAdditionalLinks_container .order_by_email span {
+	font-family: "DMSans";
+	font-weight: 600;
+	font-size: 14px;
+}
 
 
 
@@ -236,14 +241,11 @@ header {
 	gap: 16px;
 }
 .website_navAdditionalLinks_container .register {
+	color: var(--primaryColour);
 	display: flex;
 	align-items: center;
 	gap: 8px;
-}
-.website_navAdditionalLinks_container .register span {
-	color: var(--primaryColour);
-	font-family: "DMSans";
-	font-weight: 600;
+	
 }
 .website_navAdditionalLinks_container .order_by_email {
 	background: var(--accentColour);
