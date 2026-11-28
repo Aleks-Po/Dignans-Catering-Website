@@ -205,17 +205,7 @@ header {
 	align-items: center;
 }
 .website_logo_container .website_logo {
-	background: var(--accentColour);
-	height: 44px;
-	width: 44px;
-	border-radius: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-shadow: 0 0 0 4px color-mix(in srgb, var(--accentColour) 15%, transparent);
-	font-family: "Fraunces-Italic";
-	color: var(--secondaryColour);
-	font-size: 24px;
+	display: block;
 }
 .website_logo_container .website_name h2 {
 	color: var(--primaryColour);
